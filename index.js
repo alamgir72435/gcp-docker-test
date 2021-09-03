@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-	res.send("server running");
+	res.send("server running updated");
 });
 
 app.get("/check", (req, res) => {
@@ -12,6 +12,7 @@ app.get("/check", (req, res) => {
 app.get("/update", (req, res) => {
 	res.send("I am updated");
 });
+
 const PORT = process.env.PORT || 80;
 
 app.listen(PORT, () => console.log(`server Running on port ${PORT}`));
