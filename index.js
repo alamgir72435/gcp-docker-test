@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
 app.get("/check", (req, res) => {
 	res.json(process.env);
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 app.listen(PORT, () => console.log(`server Running on port ${PORT}`));
